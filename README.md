@@ -24,13 +24,13 @@ We considered the popularity of the candidate page as well as the semantic simil
 - Popularity: Calculate popularity rankings using the Elasticsearch scoring algorithm.
 - Sentence similarity: Measure the difference between text and description using the `Levenshtein distance`.
 
-NIL: Retain results with distances less than 40.
+NIL: Retain results with distances < 40.
 
 ![image](https://github.com/straightedge77/wdps_2126/blob/main/imgs/wdps%20-%202.jpg)
 
 ## Prerequisites
 
-Code is run on the DAS cluster at `/var/scratch/wdps2106/wdps_2126`, `result1` is a conda virtual environment that has been created. Below are the packages installed to run the assignment.
+Codes are run on the DAS cluster at `/var/scratch/wdps2106/wdps_2126`, `result1` is a conda virtual environment that has been created. Below are the packages installed to run the assignment.
 
  ```
 # if you want to use pip(pip for python3) to install the packages, use the following command(not recommended)
