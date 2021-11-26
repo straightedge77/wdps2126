@@ -46,16 +46,21 @@ pip install elasticsearch
 
 ## Run
 
-To run the algorithm, you can simply use the command sh run.sh. However, there are certain things you need to change in the run.sh.
-
-You can change the input file path, the keyname and the output file path in the sh file based on your situation.
+To run the program, you can simply use the command below. Be aware that the result file will be renamed as `result.tsv`.
 
 ```
-sh run.sh
+sh run.sh /path/to/warc/file.warc.gz /path/to/result/
 ```
+
 If you use DAS cluster, you also need to add this command before running:
 ```
 export OPENBLAS_NUM_THREADS=10
+```
+
+To check the score of the program, use the command below.
+
+```
+python3 score.py /sample/annotation/file/sample.tsv /generated/result/file/result.tsv
 ```
 
 ## Result
