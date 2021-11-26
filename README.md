@@ -51,10 +51,10 @@ pip install sparknlp
 
 ## Run
 
-To run the program, you can simply use the command below. Be aware that the result file will be renamed as `result.tsv`.
+To run the program, you can simply use the command below. The optional parameter `Keyname` has 2 option, the default one is `WARC_TREC_ID`. If you want to use WARC ID other than this, you can declare it using this parameter. Be aware that the result file will be renamed as `result.tsv`.
 
 ```
-sh run.sh /path/to/warc/file.warc.gz /path/to/result/
+sh run.sh /path/to/warc/file.warc.gz /path/to/result/ [Keyname]
 ```
 
 If you use DAS cluster, you also need to add this command before running:
