@@ -21,7 +21,7 @@ This is a Python program to Entity Linking  by processing WARC files. We recogni
 
 ### Disambiguation and NIL
 We considered the popularity of the candidate page as well as the semantic similarity between the sentence where the entity is located and the candidate description to achieve Disambiguation.
-- Popularity: Calculate popularity rankings using the `Elasticsearch` scoring algorithm.
+- Popularity: Calculate popularity rankings using the `Elasticsearch` scoring algorithm and the number of properties of the mention from the knowledge graph.
 - Sentence similarity: Measure the difference between text and description using the `Levenshtein distance`.
 
 NIL: Retain results with distances < 40.
@@ -33,7 +33,7 @@ NIL: Retain results with distances < 40.
 Codes are run on the DAS cluster at `/var/scratch/wdps2106/wdps_2126`, `result1` is a conda virtual environment that has been created. Below are the packages installed to run the assignment.
 
  ```
-# if you want to use pip(pip for python3) to install the packages, use the following command(not recommended)
+# if you want to use pip(pip for python3) to install the packages, use the following command(python version 3.8)
 pip install pyspark==3.1.2
 pip install spark-nlp==3.3.3
 pip install beautifulsoup4
@@ -41,7 +41,12 @@ pip install python-Levenshtein
 pip install elasticsearch
 
 # if you want to use conda to install the packages, use the following command(recommended)
- conda create --name <env> --file requirement.txt
+conda create --n <env> python=3.8
+conda install pyspark
+conda install bs4
+conda install elasticsearch
+pip install python-Levenshtein
+pip install sparknlp
  ```
 
 ## Run
@@ -59,6 +64,7 @@ export OPENBLAS_NUM_THREADS=10
 ```
 
 ## Result
+We tested our entity linking code using `sample.warc.gz`. Since the sample data only contains the first 500 entities that page_id is less than 92, our test results only output entity links with page_id <= 92. The f1 score of the sample data is 0.112.
 
 |  Metric   | Value  |
 |  :----:  | :----:  |
