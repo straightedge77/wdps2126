@@ -257,6 +257,5 @@ if __name__ == '__main__':
     result = rdd.map(get_output)
     # save the result
     result = result.coalesce(1,True).saveAsTextFile("test7")
-
     
 
