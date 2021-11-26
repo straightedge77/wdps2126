@@ -62,9 +62,9 @@ export OPENBLAS_NUM_THREADS=10
 
 |  Metric   | Value  |
 |  :----:  | :----:  |
-|  gold | 500 |
-| predicted  | 480 |
-| correct  | 55 |
-| precision  | 0.1145 |
-| recall  | 0.11 |
-| f1  | 0.1122 |
+|  Gold | 500 |
+| Predicted  | 480 |
+| Correct  | 55 |
+| Precision  | 0.1145 |
+| Recall  | 0.11 |
+| F1 Score  | 0.1122 |
