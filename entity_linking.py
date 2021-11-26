@@ -183,7 +183,7 @@ if __name__ == '__main__':
     try:
         _, INPUT = sys.argv
     except Exception as e:
-        print('Usage: python starter-code.py INPUT')
+        print('Usage: python entity_linking.py INPUT')
         sys.exit(0)
 
     spark = sparknlp.start()
@@ -215,7 +215,7 @@ if __name__ == '__main__':
     rdd = rdd.flatMapValues(get_linkedent)
     result = rdd.map(get_output)
 #    print(result.take(20))
-    result = result.coalesce(1,True).saveAsTextFile("/var/scratch/wdps2106/wdps_2126/test7")
+    result = result.coalesce(1,True).saveAsTextFile("./temp")
 
     
 
