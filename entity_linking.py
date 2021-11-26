@@ -37,7 +37,7 @@ def record_to_html(record):
             break
     if not key:
         return
-
+    
     yield key, html
 
 
