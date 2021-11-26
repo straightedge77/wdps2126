@@ -9,6 +9,7 @@ Web Data Processing System Assignment 1 - 2021 - Group 26
 ## Description
 
 This is a Python program to Entity Linking  by processing WARC files. We recognize entities from web pages and link them to a Knowledge Base(Wikidata). The pipeline for this program as below:
+
 ![image](https://github.com/straightedge77/wdps_2126/blob/main/imgs/img1.jpg)
 
 ### Read WARC
@@ -24,6 +25,7 @@ We considered the popularity of the candidate page as well as the semantic simil
 - Sentence similarity:
 
 NIL:)
+
 ![image](https://github.com/straightedge77/wdps_2126/blob/main/imgs/wdps%20-%202.jpg)
 
 ## Prerequisites
