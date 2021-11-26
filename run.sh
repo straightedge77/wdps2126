@@ -3,7 +3,7 @@
 rm -rf temp/
 
 echo Processing WARC file...
-python3 entity_linking.py $1
+python3 entity_linking.py $1 $3
 echo Generating result file.
 python3 helper.py $2
 
