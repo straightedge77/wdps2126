@@ -62,7 +62,7 @@ If you use DAS cluster, you also need to add this command before running:
 export OPENBLAS_NUM_THREADS=10
 ```
 
-To check the score of the program, use the command below.
+To check the score of the result file, use the command below.
 
 ```
 python3 score.py /sample/annotation/file/sample.tsv /generated/result/file/result.tsv
