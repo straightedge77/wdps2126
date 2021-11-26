@@ -41,7 +41,7 @@ pip install python-Levenshtein
 pip install elasticsearch
 
 # if you want to use conda to install the packages, use the following command(recommended)
-conda create --n <env> python=3.8
+conda create -n <env> python=3.8
 conda install pyspark
 conda install bs4
 conda install elasticsearch
