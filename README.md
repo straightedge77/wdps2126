@@ -69,7 +69,7 @@ python3 score.py /sample/annotation/file/sample.tsv /generated/result/file/resul
 ```
 
 ## Result
-We tested our entity linking code using `sample.warc.gz`. Since `sample_annotations.tsv` only contains the entities that page_id is less than 92, our test results only output entity links with page_id <= 92. The f1 score of the sample data is 0.112.
+We tested our entity linking code using `sample.warc.gz`. Since `sample_annotations.tsv` only contains the entities that page_id is less than 92, our test results only output entity links with page_id <= 92. The f1 score of the sample data is 0.1122.
 
 |  Metric   | Value  |
 |  :----:  | :----:  |
