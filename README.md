@@ -60,7 +60,7 @@ export OPENBLAS_NUM_THREADS=10
 
 ## Result
 
-|  表头   | Value  |
+|  Metric   | Value  |
 |  ----  | ----  |
 |  gold | 500 |
 | predicted  | 480 |
