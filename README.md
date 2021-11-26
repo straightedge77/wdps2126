@@ -21,7 +21,7 @@ This is a Python program to Entity Linking  by processing WARC files. We recogni
 
 ### Disambiguation and NIL
 We considered the popularity of the candidate page as well as the semantic similarity between the sentence where the entity is located and the candidate description to achieve Disambiguation.
-- Popularity: Calculate popularity rankings using the Elasticsearch scoring algorithm.
+- Popularity: Calculate popularity rankings using the `Elasticsearch` scoring algorithm.
 - Sentence similarity: Measure the difference between text and description using the `Levenshtein distance`.
 
 NIL: Retain results with distances < 40.
@@ -45,3 +45,7 @@ pip install elasticsearch
  ```
 
 ## Run
+
+To run the algorithm, you can simply use the command sh run.sh. However, there are certain things you need to change in the run.sh.
+
+You can change the input file path, the keyname and the output file path in the sh file based on your situation.
