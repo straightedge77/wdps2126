@@ -58,3 +58,13 @@ If you use DAS cluster, you also need to add this command before running:
 export OPENBLAS_NUM_THREADS=10
 ```
 
+## Result
+
+|  表头   | Value  |
+|  ----  | ----  |
+|  gold | 500 |
+| predicted  | 480 |
+| correct  | 55 |
+| precision  | 0.1145 |
+| recall  | 0.11 |
+| f1  | 0.1122 |
