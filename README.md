@@ -2,7 +2,7 @@
 
 Web Data Processing System Assignment 1 - 2021 - Group 26
 - Zhining Bai
-- Bowen lyv
+- Bowen Lyu
 - Tianshi Chen
 - Yiming Xu
 
