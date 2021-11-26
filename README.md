@@ -42,7 +42,6 @@ pip install elasticsearch
 
 # if you want to use conda to install the packages, use the following command(recommended)
  conda create --name <env> --file requirement.txt
-
  ```
 
 ## Run
