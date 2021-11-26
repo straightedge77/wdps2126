@@ -30,7 +30,7 @@ NIL: Retain results with distances less than 40.
 
 ## Prerequisites
 
-Code is run on the DAS cluster at /var/scratch/wdps2106/wdps_2126, assignment1 is a conda virtual environment that has been created. Below are the packages installed to run the assignment.
+Code is run on the DAS cluster at `/var/scratch/wdps2106/wdps_2126`, `result1` is a conda virtual environment that has been created. Below are the packages installed to run the assignment.
 
  ```
 # if you want to use pip(pip for python3) to install the packages, use the following command(not recommended)
